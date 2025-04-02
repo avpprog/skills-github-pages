@@ -1,0 +1,22 @@
+---
+title: Pandas Exercise
+date: April 02, 25
+---
+link: https://github.com/mrdbourke/zero-to-mastery-ml/blob/master/section-2-data-science-and-ml-tools/pandas-exercises.ipynb
+
+colours = pd.Series(["Red", "Green", "Blue"])
+-> S in series is capital
+-> Contents are written in ([...])
+
+df = pd.DataFrame({"Colours":colours, "Brand":car_type})
+-> format within parenthesis is:  { "column_name" : series, "column2_name" : series }
+
+car_sales_df = pd.read_csv('https://raw.githubusercontent.com/mrdbourke/zero-to-mastery-ml/refs/heads/master/data/car-sales.csv', index_col=0)
+-> use raw format in csv file while importing from github
+
+car_sales_df.dtypes
+-> to find datatype of single column: dataframe.column.dtype
+-> for all cols: dataframe.dtypes
+
+len(car_sales_df)
+-> finding length / row_count of dataframe
